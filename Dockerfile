@@ -11,7 +11,6 @@ RUN \
 	nginx \
 	openssl \
 	php7 \
-	php7-cli \
 	php7-json \
 	php7-fpm && \
 
