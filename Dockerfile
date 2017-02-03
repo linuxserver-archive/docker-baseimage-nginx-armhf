@@ -4,14 +4,14 @@ MAINTAINER sparklyballs, aptalca
 # install packages
 RUN \
  apk add --no-cache \
- 	apache2-utils \
+	apache2-utils \
 	git \
 	nano \
 	logrotate \
 	nginx \
 	openssl \
 	php7 \
-	php5-cli \
+	php7-cli \
 	php7-json \
 	php7-fpm && \
 
