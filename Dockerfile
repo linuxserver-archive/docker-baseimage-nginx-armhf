@@ -18,7 +18,7 @@ RUN \
 # configure nginx
  echo 'fastcgi_param  SCRIPT_FILENAME $document_root$fastcgi_script_name;' >> \
 	/etc/nginx/fastcgi_params && \
-rm -f /etc/nginx/conf.d/default.conf
+ rm -f /etc/nginx/conf.d/default.conf
 
 # add local files
 COPY root/ /
