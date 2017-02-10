@@ -19,6 +19,9 @@ RUN \
 	/etc/nginx/fastcgi_params && \
  rm -f /etc/nginx/conf.d/default.conf
 
+# fix logrotate
+ sed -i "s#/var/log/messages {}.*# #g" /etc/logrotate.conf
+
 # add local files
 COPY root/ /
 
