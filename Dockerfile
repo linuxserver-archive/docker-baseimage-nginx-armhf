@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.armhf:3.5
+FROM lsiobase/alpine.armhf:3.6
 MAINTAINER sparklyballs, aptalca
 
 # install packages
@@ -6,15 +6,11 @@ RUN \
  apk add --no-cache \
 	apache2-utils \
 	git \
+	libressl2.5-libssl \
 	logrotate \
 	nano \
 	nginx \
-	openssl && \
- apk add --no-cache \
-	--repository http://nl.alpinelinux.org/alpine/edge/main \
-	libressl2.5-libssl && \
- apk add --no-cache \
-	--repository http://nl.alpinelinux.org/alpine/edge/community \
+	openssl \
 	php7 \
 	php7-fileinfo \
 	php7-fpm \
