@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.armhf:3.6
+FROM lsiobase/alpine.armhf:3.7
 LABEL maintainer="sparklyballs,aptalca"
 
 # install packages
