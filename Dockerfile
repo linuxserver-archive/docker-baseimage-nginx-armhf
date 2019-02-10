@@ -1,4 +1,4 @@
-FROM lsiobase/alpine.armhf:3.8
+FROM lsiobase/alpine.armhf:3.9
 
 # install packages
 RUN \
